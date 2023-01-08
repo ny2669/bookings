@@ -39,7 +39,7 @@ const handleOption = (name, operation) => {
         console.log(options, operation === 'i')
         return {
             ...prev,
-            [name]: operation === false ? options[name] + 1 : options[name] - 1,
+            [name]: operation === 'i' ? options[name] + 1 : options[name] - 1,
         }
     })
 
